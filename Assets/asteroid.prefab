@@ -140,3 +140,5 @@ MonoBehaviour:
   life: 10
   clip: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
   hit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  explosion: {fileID: 6011923315246250801, guid: c91205e3d9f389741a2e5749ec6c7729, type: 3}
+  Ponto: {fileID: 6264682932775134296}

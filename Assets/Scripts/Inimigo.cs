@@ -1,6 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Inimigo : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class Inimigo : MonoBehaviour
     public float velocidadeMaxima;
     public int life;
     public AudioClip clip, hit;
+  public GameObject explosion;
+  public Transform Ponto;
 
     private float velocidadeY;
 
@@ -24,6 +29,7 @@ public class Inimigo : MonoBehaviour
 
         if(life <= 0){
           NaveJogador.mortes += 1;
+          Instantiate(explosion, Ponto.position, Ponto.rotation);
           AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1F);
           Destroy(gameObject);
         }
@@ -39,8 +45,9 @@ public class Inimigo : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col){
      if(col.gameObject.layer == 6){ //player
         col.gameObject.GetComponent<NaveJogador>().TakeDamage(2);
+          Instantiate(explosion, Ponto.position, Ponto.rotation);
           AudioSource.PlayClipAtPoint(hit, Camera.main.transform.position, 1F);
-        Destroy(gameObject);
+          Destroy(gameObject);
       }
       if(col.gameObject.layer == 8) { //camera
           Destroy(gameObject);

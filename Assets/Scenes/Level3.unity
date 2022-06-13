@@ -2728,6 +2728,7 @@ MonoBehaviour:
   rb: {fileID: 1521812399}
   life: 250
   clip: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
+  nomeCenaJogo: EndGame
 --- !u!50 &1521812399
 Rigidbody2D:
   serializedVersion: 4

@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     public Vector3 offset = Vector3.up;
 
     public Rigidbody2D rb;
-    public static int life;
+    public int life;
     public AudioClip clip;
     public string nomeCenaJogo = "EndGame";
 
@@ -40,8 +40,9 @@ public class Boss : MonoBehaviour
 
         if(life <= 0){
           AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1F);
+        SceneManager.LoadScene(nomeCenaJogo);
           Destroy(gameObject);
-          SceneManager.LoadScene(nomeCenaJogo);
         }
     }
+
 }
