@@ -156,7 +156,7 @@ MonoBehaviour:
   enemy:
   - {fileID: 4907274199447475318, guid: f3b207f0058874141ae02e65af1d9f9c, type: 3}
   - {fileID: 7901249545017883175, guid: 88ad8450d151f9e41a718302c0f52157, type: 3}
-  tempoPorSpawn: 8
+  tempoPorSpawn: 5
 --- !u!4 &126195801
 Transform:
   m_ObjectHideFlags: 0
@@ -947,7 +947,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c6b1514e35f2c48e6b2d831f9540a4e6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e3aad5cca58f2144eb12427552deb8a6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.731
   m_Pitch: 1
@@ -2647,7 +2647,7 @@ MonoBehaviour:
   enemy:
   - {fileID: 4907274199447475318, guid: f3b207f0058874141ae02e65af1d9f9c, type: 3}
   - {fileID: 7901249545017883175, guid: 88ad8450d151f9e41a718302c0f52157, type: 3}
-  tempoPorSpawn: 7
+  tempoPorSpawn: 6
 --- !u!4 &1929846437
 Transform:
   m_ObjectHideFlags: 0

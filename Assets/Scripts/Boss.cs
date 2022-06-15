@@ -17,14 +17,15 @@ public class Boss : MonoBehaviour
     public Vector3 offset = Vector3.up;
 
     public Rigidbody2D rb;
-    public int life;
+    public int life, maxLife = 0;
     public AudioClip clip;
     public string nomeCenaJogo = "EndGame";
+    public LifeBar lifeBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        lifeBar.SetMaxLife(life);
     }
 
     // Update is called once per frame
@@ -37,6 +38,8 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int damage){
         life -= damage;
+
+       lifeBar.SetLife(life);
 
         if(life <= 0){
           AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1F);

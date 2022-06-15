@@ -1616,7 +1616,7 @@ MonoBehaviour:
   enemy:
   - {fileID: 4907274199447475318, guid: f3b207f0058874141ae02e65af1d9f9c, type: 3}
   - {fileID: 7901249545017883175, guid: 88ad8450d151f9e41a718302c0f52157, type: 3}
-  tempoPorSpawn: 9
+  tempoPorSpawn: 7
 --- !u!4 &1206516334
 Transform:
   m_ObjectHideFlags: 0
